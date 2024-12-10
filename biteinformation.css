@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: Quicksand;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 16px 0;
+    background: linear-gradient(90deg, #433798 20%, #1a1423 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.navbar {
+    padding: 20px 15px;
+    position:absolute;
+    z-index: 100;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    box-shadow: 0 8px 42px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav .menu-items {
+display: flex;
+align-items: center;
+gap: 30px;
+font-weight: 500;
+color: black; 
+font-size: 15px; 
+border-bottom: 2px solid transparent;
+font-weight: bold;
+margin-right: 25px;
+line-height: 0.5; /* Adjusts vertical alignment */
+
+}
+
+nav .menu-items a{
+font-weight: 500;
+color: black; 
+font-size: 15px; 
+font-weight: bold;
+}
+
+nav .menu-items a:hover{
+color: #5947de;
+}
+
+nav .menu-items .btn:hover{
+color: white;
+background-color: #062554;
+transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+nav .menu-items a.active {
+color: #0344a7;
+border-bottom: 2px solid #FF7F3E; /* Highlight the current page link */
+padding: 10px;
+font-size: 16px;
+}
+  
+
+.logo a{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: black;
+}
+
+.btn {
+    background-color: #FF7F3E;
+    border-color: #FF7F3E; 
+    margin-left:20; 
+    margin-right: 20px; 
+    border-radius: 30px; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container { 
+    width: 80%; 
+    margin: 50px auto; 
+    padding: 10px; 
+} 
+
+header .featured{ 
+    display: flex;
+    position: relative;
+} 
+
+.buttons { 
+    text-align: center; 
+    margin: 10px 0; 
+} 
+
+.featured img {
+    height: 364px;
+   }
+   
+
+.buttons button { 
+    padding: 10px 30px; 
+    margin: 0 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: #FF7F3E;
+    border-radius: 50px; 
+    border: none; /* Create space between text and border */ 
+    
+}
+
+.buttons .active {
+    color: #ffffff;
+    border-bottom: 2px solid #0344a7; /* Highlight the current page link */
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.buttons button:hover{ 
+    color: white;
+background-color: #062554;
+transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.video { 
+    text-align: center; 
+    margin: 30px 0; 
+} 
+
+.info-section { 
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow the section to take up available space */
+} 
+
+.info-section p {
+    text-indent: 20px;
+}
+
+.info-section h2 { 
+    margin-top: 0; 
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack the items vertically on smaller screens */
+        align-items: center; /* Center align the items */
+    }
+
+    .info-section {
+        margin-bottom: 20px; /* Add margin below the info section */
+    }
+
+    .biteImages {
+        float: none; /* Remove float */
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center align the image */
+    }
+
+    .biteImages img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Ensure the image does not exceed its original width */
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block; /* Display the menu icon on small screens */
+    }
+
+    nav .menu-items {
+        display: none; /* Hide menu items by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on nav height */
+        right: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        box-shadow: 0 8px 42px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-items.show {
+        display: flex; /* Show the menu when toggled */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .buttons button {
+        padding: 8px 20px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .menu-items a,
+    .menu-items .btn {
+        font-size: 18px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .logo a {
+        font-size: 24px; /* Adjust logo size */
+    }
+
+    header .featured {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the items */
+    }
+
+    header {
+        margin-top: 150px; /* Adjust margin for better spacing on smaller screens */
+    }
+
+    .featured img {
+        height: 150px;
+    }
+}
