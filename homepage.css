@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: Quicksand;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 16px 0;
+    background: linear-gradient(90deg, #433798 20%, #1a1423 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.navbar {
+    padding: 20px 15px;
+    position:absolute;
+    z-index: 100;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    z-index: 5;
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 42px rgba(0, 0, 0, 0.1);
+  }
+
+nav .menu-items {
+display: flex;
+align-items: center;
+gap: 30px;
+font-weight: 500;
+color: black; 
+font-size: 15px; 
+border-bottom: 2px solid transparent;
+font-weight: bold;
+margin-right: 25px;
+line-height: 0.5; /* Adjusts vertical alignment */
+
+}
+
+nav .menu-items a{
+font-weight: 500;
+color: black; 
+font-size: 15px; 
+font-weight: bold;
+}
+
+nav .menu-items a:hover{
+color: #5947de;
+}
+
+nav .menu-items .btn:hover{
+color: white;
+background-color: #062554;
+transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+nav .menu-items a.active {
+color: #0344a7;
+border-bottom: 2px solid #FF7F3E; /* Highlight the current page link */
+padding: 10px;
+font-size: 16px;
+}
+  
+
+.logo a{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: black;
+}
+
+.btn {
+    background-color: #FF7F3E;
+    border-color: #FF7F3E; 
+    margin-left:20; 
+    margin-right: 20px; 
+    border-radius: 30px; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .featured {
+    display: flex;
+    height: 85vh;
+    min-height: 85px;
+    max-height: 900px;
+    position: relative;
+}
+
+.featured img {
+ height: 670px;
+}
+
+.feature {
+    background-color: #FF7F3E;
+    display: flex;
+    height: 85vh;
+    padding-top: 10px;
+    min-height: 85px;
+    max-height: 900px;
+}
+
+/* about section */
+/* Welcome to BiteAware */
+
+#about {
+    background-image: linear-gradient(to right, #efb96d98, #a92e2e); /* Gradient effect */
+    z-index: 5;
+    /* background-image: url('bgImage/bg.png'); */
+    margin-top: -60px;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+  
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.right img{
+    width: 700px;
+}
+
+/* Animal Bite Center */
+
+h2 {
+    font-size: 40px;
+    line-height: 100%;
+    background: linear-gradient(90deg, #433798 20%, #1a1423 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#animalBite{
+    z-index: 10;
+    background-color: #E8B29B;
+    border-radius: 30px;
+    box-shadow: 0 0 42px -20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    max-width: 1400px; 
+    transform: translate(3%, -80%);
+    position: relative;
+}
+
+#animalBite .animalBC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 42px -20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.animalBCinfo {
+    justify-content: center;
+    padding: 5px;
+}
+   
+.location {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location a {
+    justify-content: center;
+    background-color: #FF7F3E;
+    border-color: #FF7F3E;
+    border-radius: 30px; 
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.location a:hover{
+    color: white;
+    background-color: #062554;
+}
+
+#GenInfo {
+    /* position: relative; */
+    z-index: 3;
+    background-image: url('bgImage/bg.png');
+    margin-top: -300px;
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#shortVidInfo {
+    position: relative;
+    z-index: 9;
+    margin-top: -180px;
+    padding-top: 200px;
+    gap: 20px; /* Adjust the gap for better spacing */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.shortVid{
+    padding-bottom: 100px;
+}
+
+/* Treatment Guide */
+
+#treatmentGuide{
+    position: relative;
+    z-index: 5;
+    margin-top: -180px;
+    padding: 200px 100px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.treatmentVid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TG a {
+    color: black;
+    justify-content: center;
+    background-color: transparent; /* Use transparent for no background */
+    border: 2px solid #FF7F3E; /* Ensure border width and style are specified */
+    /* border-radius: 30px; */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline on links */
+    display: inline-flex; /* Ensure justify-content works */
+    align-items: center; /* Center the text ver */
+
+}
+
+.TG a:hover{
+    color: white;
+    background-color: #FF7F3E;
+}
+
